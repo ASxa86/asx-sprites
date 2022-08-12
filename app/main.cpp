@@ -9,7 +9,7 @@
 #include <sstream>
 #include <vector>
 
-sf::VertexArray BuildArray(const std::vector<sf::Sprite>& x)
+sf::VertexArray BatchSprites(const std::vector<sf::Sprite>& x)
 {
 	sf::VertexArray v{sf::PrimitiveType::Quads, x.size() * 4};
 
@@ -134,7 +134,7 @@ int main()
 		//	window.draw(sprite);
 		// }
 
-		auto vertexArray = BuildArray(sprites);
+		auto vertexArray = BatchSprites(sprites);
 		sf::RenderStates states;
 		states.transform.scale({4.0, 4.0});
 		states.texture = &texture;
