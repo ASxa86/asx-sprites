@@ -1,0 +1,10 @@
+{
+  "name": "asx-sprites",
+  "version-string": "2022.8.11",
+  "port-version": 1,
+  "description": "A repo to test sprite rendering performance and implementations",
+  "homepage": "https://github.com/asxa86/asx-sprites/",
+  "dependencies": [
+    "sfml"
+  ]
+}
